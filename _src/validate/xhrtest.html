@@ -1,0 +1,18 @@
+<html>
+<head>
+  <script type="text/javascript" src="xhr.js"></script>  
+</head>
+<body> 
+<div id="test">
+</div>
+<script>
+  XmlHttp
+  ({url:'async.txt',
+    complete:function(xhr,response,status)
+      {        
+        document.getElementById("test").innerHTML = response;
+      }
+  });
+</script>
+</body>
+</html>

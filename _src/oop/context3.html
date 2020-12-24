@@ -1,0 +1,21 @@
+<script>
+
+x = 0; // declare global variable
+document.write(x); // displays "0"
+
+function BigTest()
+{
+  // force creation of instance
+  if (!(this instanceof BigTest)) return new BigTest();
+  
+  // create property and display its value  
+  this.x = 1; 
+  document.write(this.x); // displays "1" 
+  document.write(x); // displays "0"
+}
+
+BigTest(); // simple function call
+
+document.write(x); // displays "0"
+
+</script>

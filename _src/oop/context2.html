@@ -1,0 +1,15 @@
+<script>
+
+x = 0; // declare global variable
+document.write(x); // displays "0"
+
+function BigTest()
+{
+  this.x = 1; 
+}
+
+var obj = new BigTest();
+
+document.write(x); // displays "0"
+
+</script>

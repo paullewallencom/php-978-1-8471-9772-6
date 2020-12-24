@@ -1,0 +1,33 @@
+.Table1
+{
+  border: DarkGreen 1px solid;
+  background-color: LightGreen;
+}
+.TableHead1
+{      
+  font-family: Verdana, Arial;
+  font-weight: bold;
+  font-size: 10pt;
+}      
+.TableContent1
+{      
+  font-family: Verdana, Arial;
+  font-size: 10pt;  
+}
+
+.Table2
+{
+  border: DarkBlue 1px solid;
+  background-color: LightBlue;
+}
+.TableHead2
+{      
+  font-family: Verdana, Arial;
+  font-weight: bold;
+  font-size: 10pt;
+}      
+.TableContent2
+{      
+  font-family: Verdana, Arial;
+  font-size: 10pt;  
+}

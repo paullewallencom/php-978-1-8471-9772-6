@@ -1,0 +1,28 @@
+<script>
+
+// retrieve the DisplayGreeting function
+var funcDisplayGreeting = ShowHelloWorld();
+
+// call the function
+funcDisplayGreeting();
+
+// define outer "Hello, World" function
+function ShowHelloWorld ()
+{
+  // declaring new variables
+  var date = new Date();
+  var hour = date.getHours();
+  
+  // define inner "display greeting" function
+  function DisplayGreeting()
+  {
+    if (hour >= 22 || hour <= 5)
+      document.write("Goodnight, world!");
+    else
+      document.write("Hello, world!");
+  }
+  // return DisplayGreeting as a closure
+  return DisplayGreeting;
+}
+
+</script>

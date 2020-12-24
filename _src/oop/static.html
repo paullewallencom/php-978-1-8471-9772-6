@@ -1,0 +1,32 @@
+<script>
+
+// Table class
+function Table (rows, columns)
+{
+  // save parameter values to class properties
+  this.rows = rows;
+  this.columns = columns;
+}
+
+// Table.getCellCount returns the number of table cells
+Table.prototype.getCellCount = function()
+{
+  return this.rows * this.columns;
+};
+
+// static property
+Table.SQUARESIZE = 2;
+
+// static method
+Table.getSquareTable = function()
+{
+   return new Table(Table.SQUARESIZE, Table.SQUARESIZE);
+}
+
+// calling a static method to get a Table instance
+var t3 = Table.getSquareTable();
+
+// execute instance method
+alert(t3.getCellCount());
+
+</script>

@@ -1,0 +1,24 @@
+<script>
+
+// Table class
+function Table (rows, columns)
+{
+  // save parameter values to local variables
+  var _rows = rows;
+  var _columns = columns;
+  // return the number of table cells
+  this.getCellCount = function()
+  {
+    return _rows * _columns;
+  };
+}
+
+// create a Table object
+var t = new Table(3,5);
+// display object field values
+document.write("Your table has " + t._rows + " rows" +
+" and " + t._columns + " columns<br />");
+// call object function
+document.write("The table has " + t.getCellCount() + " cells<br />");
+
+</script>

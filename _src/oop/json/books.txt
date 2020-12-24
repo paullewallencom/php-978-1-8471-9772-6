@@ -1,0 +1,8 @@
+{books:[
+ {title:"AJAX and PHP: Building Modern Web Applications, 2nd Ed",
+  isbn:"978-1904817726"},
+ {title:"Beginning PHP and MySQL E-Commerce, 2nd Edition",
+  isbn:"978-1590598641"},
+ {title:"Professional Search Engine Optimization with PHP",
+  isbn:"978-0470100929"}
+]}

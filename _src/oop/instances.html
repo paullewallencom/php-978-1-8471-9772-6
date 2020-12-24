@@ -1,0 +1,25 @@
+<script>
+
+// Table class
+function Table (rows, columns)
+{
+  // save parameter values to class properties
+  this.rows = rows;
+  this.columns = columns;
+}
+
+// Table.getCellCount returns the number of table cells
+Table.prototype.getCellCount = function()
+{
+  return this.rows * this.columns;
+};
+
+var t1 = new Table(2,3);
+var t2 = new Table(3,5);
+
+// display the number of cells of the first table
+alert(t1.getCellCount());
+// display the number of cell from the second table
+alert(t2.getCellCount());
+
+</script>

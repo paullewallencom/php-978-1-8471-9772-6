@@ -1,0 +1,26 @@
+<script>
+
+// explicit function call
+ShowHelloWorld();
+
+// define outer "Hello, World" function
+function ShowHelloWorld()
+{
+  // declaring new variables
+  var date = new Date();
+  var hour = date.getHours();
+  
+  // call DisplayGreeting supplying the current hour as parameter
+  DisplayGreeting(hour);
+
+  // define inner "display greeting" function
+  function DisplayGreeting(hour)
+  {
+    if (hour >= 22 || hour <= 5)
+      document.write("Goodnight, world!");
+    else
+      document.write("Hello, world!");
+  }
+}
+
+</script>                      

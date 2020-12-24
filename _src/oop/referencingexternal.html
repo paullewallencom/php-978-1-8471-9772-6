@@ -1,0 +1,24 @@
+<script>
+
+// test the Table class
+var t = new Table(3,5);
+var cellCount = t.getCellCount();
+alert (cellCount);
+
+// Table class
+function Table (rows, columns)
+{
+  // constructor
+  this.rows = rows;
+  this.columns = columns;
+  // getCellCount method
+  this.getCellCount = getCellCount;
+}
+
+// returns the number of cells
+function getCellCount()
+{
+  return this.rows * this.columns;
+}
+
+</script>

@@ -1,0 +1,28 @@
+<script>
+
+// returns the current hour
+function GetCurrentHour()
+{
+  // obtain the current hour
+  var date = new Date();
+  var hour = date.getHours();
+  // return the hour
+  return hour;
+}
+
+// display greeting
+function DisplayGreeting(hourFunc)
+{
+  // retrieve the hour using the function received as parameter
+  hour = hourFunc();
+  // display greeting
+  if (hour >= 22 || hour <= 5)
+    document.write("Goodnight, world!");
+  else
+    document.write("Hello, world!");
+}
+
+// call DisplayGreeting
+DisplayGreeting(GetCurrentHour);
+
+</script>

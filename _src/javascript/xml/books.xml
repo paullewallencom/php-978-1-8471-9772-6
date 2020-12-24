@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+  <books>
+    <book>
+      <title>
+        AJAX and PHP: Building Modern Web Applications, 2nd Ed
+      </title>
+      <isbn>
+        978-1904817726
+      </isbn>
+    </book>
+    <book>
+      <title>
+        Beginning PHP and MySQL E-Commerce, 2nd Edition
+      </title>
+      <isbn>
+        978-1590598641
+      </isbn>
+    </book>
+    <book>
+      <title>
+        Professional Search Engine Optimization with PHP
+      </title>
+      <isbn>
+        978-0470100929
+      </isbn>
+    </book>
+  </books>
+</response>
